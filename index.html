@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            background-color: #68A8B0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Conteúdo da Página Aqui -->
+    <div class="container-fluid">
+        <div class="card p-4">
+            <h1 class="text-center mb-4">Conversor de Temperatura</h1>
+            <div class="form-group">
+                <label for="celsiusInput">Temperatura em Celsius (°C):</label>
+                <input type="number" class="form-control" id="celsiusInput" placeholder="Digite a temperatura em Celsius">
+            </div>
+            <button class="btn btn-primary btn-block mt-3" onclick="converterTemperatura()">Converter</button>
+
+            <h2 class="mt-4">Resultados:</h2>
+            <p id="fahrenheitOutput"></p>
+            <p id="kelvinOutput"></p>
+            <p id="rankineOutput"></p>
+        </div>
+    </div>
+
+    <!-- Scripts do Bootstrap (jQuery, Popper.js e Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Seu Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
